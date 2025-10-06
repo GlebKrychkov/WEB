@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog - Pages</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_row row">
+                <div class="header_logo col-lg-3">
+                    <a href="index.html"><img src="logo.svg" alt="Pages Logo"></a>
+                </div>
+                <div class="header_menu col-lg-6">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="register.html">Register/Login</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li class="admin-link" style="display: none;"><a href="admin.html">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="header_iconBox col-lg-3">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="register.html"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="catalog">
+        <div class="container">
+            <h1 class="title title-lg text-center">Book Catalog</h1>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="filters mb-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <select id="sortSelect" class="form-control">
+                                    <option value="title-asc">Title: A-Z</option>
+                                    <option value="title-desc">Title: Z-A</option>
+                                    <option value="price-asc">Price: Low to High</option>
+                                    <option value="price-desc">Price: High to Low</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" id="searchInput" class="form-control" placeholder="Search by title...">
+                            </div>
+                        </div>
+                        <div class="category-filter mt-3">
+                            <label><input type="radio" name="category" data-category="all" checked> All</label>
+                            <label><input type="radio" name="category" data-category="Fiction"> Fiction</label>
+                            <label><input type="radio" name="category" data-category="Non-Fiction"> Non-Fiction</label>
+                            <label><input type="radio" name="category" data-category="Science"> Science</label>
+                            <label><input type="radio" name="category" data-category="Fantasy"> Fantasy</label>
+                            <label><input type="radio" name="category" data-category="Mystery"> Mystery</label>
+                            <label><input type="radio" name="category" data-category="History"> History</label>
+                        </div>
+                    </div>
+                    <div id="loader" class="loader"></div>
+                    <div id="book-list" class="row"></div>
+                    <div class="pagination text-center">
+                        <button id="prevPage" class="button">Previous</button>
+                        <span id="currentPage">1</span>
+                        <button id="nextPage" class="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer_logo col-lg-3">
+                    <a href="index.html"><img src="logo.svg" alt="Pages Logo"></a>
+                    <div class="footer_iconBox">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer_menu col-lg-3">
+                    <h5 class="title title-xs title-white">Links</h5>
+                    <ul>
+                        <li><a href="index.html" class="desc desc-sm desc-light">Home</a></li>
+                        <li><a href="catalog.html" class="desc desc-sm desc-light">Catalog</a></li>
+                        <li><a href="cart.html" class="desc desc-sm desc-light">Cart</a></li>
+                        <li><a href="register.html" class="desc desc-sm desc-light">Register/Login</a></li>
+                        <li><a href="feedback.html" class="desc desc-sm desc-light">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer_address col-lg-3">
+                    <h5 class="title title-xs title-white">Contact</h5>
+                    <div>
+                        <h6 class="desc desc-sm desc-light">Email:</h6>
+                        <a href="mailto:support@pages.com" class="desc desc-sm desc-light">support@pages.com</a>
+                    </div>
+                    <div>
+                        <h6 class="desc desc-sm desc-light">Phone:</h6>
+                        <a href="tel:+1234567890" class="desc desc-sm desc-light">+1 234 567 890</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="catalog.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

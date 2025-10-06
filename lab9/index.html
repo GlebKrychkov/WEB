@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" data-scrapbook-source="https://pages-project-monday.netlify.app/#"
+    data-scrapbook-create="20250530184211898">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Your Books From The Best Writer.</title>
+    <link rel="shortcut icon" href="x-icon.svg" type="image/x-icon">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="all.min.css" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="preloader" style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#fff;z-index:10000;transition:opacity .3s ease">
+        <div style="width:48px;height:48px;border:4px solid #eee;border-top-color:#503CEB;border-radius:50%;animation:spin 1s linear infinite"></div>
+        <style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+    </div>
+    <header class="header">
+        <div class="header_menu col-lg-6 col-md-6 col-sm-2 col-2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="row header_row">
+                <div class="col-6 col-lg-2">
+                    <div class="header_logo"><a href="#"><img src="logo.svg" alt="logo"></a></div>
+                </div>
+                <div class="col-2 d-none d-lg-block">
+                    <div class="header_iconBox"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i
+                                class="fa-brands fa-twitter"></i></a><a href="#"><i
+                                class="fa-brands fa-linkedin-in"></i></a></div>
+                </div>
+                <div class="col-5 d-none d-lg-block">
+                    <div class="header_menu">
+                        <ul>
+                            <li><a href="#" class="desc desc-sm">Home</a></li>
+                            <li><a href="#" class="desc desc-sm">About</a></li>
+                            <li><a href="#" class="desc desc-sm">Pages</a></li>
+                            <li><a href="#" class="desc desc-sm">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="header_btnBox"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a><a href="#"
+                            class="button button-sm d-none d-lg-inline-block">Order Today</a><i
+                            class="fa-solid fa-bars d-flex d-lg-none" id="header_bars"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobile d-flex d-lg-none">
+            <ul>
+                <li><a href="#" class="desc desc-sm">Home</a></li>
+                <li><a href="#" class="desc desc-sm">About</a></li>
+                <li><a href="#" class="desc desc-sm">Pages</a></li>
+                <li><a href="#" class="desc desc-sm">Contact Us</a></li>
+            </ul>
+            <div class="header_mobileSocial"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i
+                        class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="header_mobileBtn"><a href="#" class="button button-sm">Order Today</a></div><i
+                class="fa-solid fa-xmark" id="header_xmark"></i>
+        </div>
+    </header>
+    <section class="home">
+        <div class="container">
+            <div class="row home_row">
+                <div class="col-12 col-lg-6">
+                    <div class="home_textBox"><span class="title title-xs title-white">Welcome to Pages!!!</span>
+                        <h1 class="title title-lg title-white">Your Books From The Best Writer.</h1>
+                        <p class="desc desc-light">We believe that reading books are essential to a healthy culture.
+                            They’re where authors can connect with readers.</p>
+                        <div class="home_btnBox"><a href="#" class="button button-lg" data-open-map>Our Location</a><a href="#" data-open-video
+                                class="button button-lg button-blue">Watch Video</a></div>
+                        <div class="home_info">
+                            <div>
+                                <h4 class="title title-xs title-white">Pages:</h4>
+                                <p class="desc desc-sm desc-light">250pages</p>
+                            </div>
+                            <div>
+                                <h4 class="title title-xs title-white">Length:</h4>
+                                <p class="desc desc-sm desc-light">10 Hours</p>
+                            </div>
+                            <div>
+                                <h4 class="title title-xs title-white">Rating:</h4>
+                                <p class="desc desc-sm desc-light">4.5/5 (305 ratings)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="home_imgBox"><img src="home_img.png" alt="The Dark Light"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="book">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="book_title">
+                        <h2 class="title">The Author’s Book</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="book_card" id="book_card1">
+                        <div class="book_imgBox"><img src="book_img1.png" alt="book"></div>
+                        <div class="book_textBox">
+                            <h4 class="title title-sm">Atomic One’s</h4><span class="desc desc-yellow">$ 13.84
+                                USD</span>
+                            <p class="desc">As the book contains theoretical content as well as solved questions.</p>
+                            <h5 class="title title-xs">Printed Book</h5><a href="#"
+                                class="button button-sm button-white">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="book_card" id="book_card2">
+                        <div class="book_imgBox"><img src="book_img2.png" alt="book"></div>
+                        <div class="book_textBox">
+                            <h4 class="title title-sm">The Dark Light</h4><span class="desc desc-yellow">$ 86.11
+                                USD</span>
+                            <p class="desc">As the book contains theoretical content as well as solved questions.</p>
+                            <h5 class="title title-xs">Printed Book</h5><a href="#"
+                                class="button button-sm button-white">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="author">
+        <div class="container">
+            <div class="row">
+                <div class="order-2 order-xl-1 col-12 col-xl-6">
+                    <div class="author_videoBox"><img src="videoframe_5041.png" alt="">
+                    </div>
+                </div>
+                <div class="order-1 order-xl-2 col-12 col-xl-6">
+                    <div class="author_textBox">
+                        <h2 class="title">About the Author</h2>
+                        <p class="desc">We believe that bookstores are essential to a healthy culture. They’re where
+                            authors can connect with readers, where we discover new writers, where children get hooked
+                            on the thrill of reading that can last a lifetime.</p>
+                        <div class="author_infoBox">
+                            <div>
+                                <h1 class="title title-lg">02</h1>
+                                <p class="desc">Books Published</p>
+                            </div>
+                            <div>
+                                <h1 class="title title-lg">4.5</h1>
+                                <p class="desc">User Reviews</p>
+                            </div>
+                            <div>
+                                <h1 class="title title-lg">04</h1>
+                                <p class="desc">Best Seller Awards</p>
+                            </div>
+                        </div>
+                        <div class="author_address">
+                            <div><img src="author_qr.svg" alt="qr code"></div>
+                            <div>
+                                <h6 class="title title-xs title-yellow">John Abraham , Ph.d</h6><a
+                                    class="desc desc-sm desc-light" href="mailto:johnabraham@gmail.com">Mail:
+                                    johnabraham@gmail.com</a><a class="desc desc-sm desc-light"
+                                    href="tel:998939789879">Phone: (+2) 123 545 9000</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ach">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="ach_title">
+                        <h2 class="title">Trusted By The Best</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="ach_card"><img src="ach_img1.svg" alt="icon">
+                        <h5 class="title title-xs">Amazen Corp.</h5>
+                        <p class="desc desc-sm">They has been helping readers, music lovers, and videophiles find
+                            quality material.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="ach_card"><img src="ach_img2.svg" alt="icon">
+                        <h5 class="title title-xs">Megan Books</h5>
+                        <p class="desc desc-sm">We help physical bookstores manage their overstock to the book
+                            inventory.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="ach_card"><img src="ach_img3.svg" alt="icon">
+                        <h5 class="title title-xs">Megank</h5>
+                        <p class="desc desc-sm">Bookstore serving up the full spectrum of Black literature and wine
+                            black books.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="ach_card"><img src="ach_img4.svg" alt="icon">
+                        <h5 class="title title-xs">Urban Store</h5>
+                        <p class="desc desc-sm">We also carry the latest records, issues of all of your favorite comic
+                            books.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="order">
+        <div class="container">
+            <div class="row order_row">
+                <div class="col-12 col-lg-6">
+                    <div class="order_textBox">
+                        <h2 class="title title-white">Get Book Copy Today!</h2>
+                        <p class="desc desc-light">We believe that bookstores are essential to a healthy culture.
+                            They’re where authors can connect with readers.</p><a href="#" class="button">Order
+                            Today</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="order_imgBox"><img src="order_img.png" alt="book"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="learn">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="learn_title">
+                        <h2 class="title">What Will You Learn?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <div class="learn_cardBox">
+                        <div class="learn_card"><span class="title title-xs">01</span>
+                            <h6 class="title title-xs">Use HDFS &amp; Map Reduce for storing &amp; analyzing data at
+                                scale.</h6>
+                        </div>
+                        <div class="learn_card"><span class="title title-xs">02</span>
+                            <h6 class="title title-xs">Consume streaming data using Spark Streaming, Flink, and Storm.
+                            </h6>
+                        </div>
+                        <div class="learn_card"><span class="title title-xs">03</span>
+                            <h6 class="title title-xs">Choose an appropriate data storage technology for your
+                                application</h6>
+                        </div>
+                        <div class="learn_card"><span class="title title-xs">04</span>
+                            <h6 class="title title-xs">Analyze non-relational data using HBase, Cassandra, and MongoDB.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <div class="learn_imgBox"><img src="learn_img.png" alt="person"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="chapter">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="chapter_title">
+                        <h2 class="title">Enhance knowledge &amp; Vision</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="chapter_cardBox">
+                        <div class="chapter_card">
+                            <h5 class="title title-xs">Chapter-1 Get Started Intro</h5>
+                            <p class="desc">You can double your knowledge by reading this ever needed book that can last
+                                a lifetime.</p>
+                            <div class="chapter_cardBottom">
+                                <div>
+                                    <p class="title">Pages :</p><span class="desc desc-sm">106 pages</span>
+                                </div>
+                                <div>
+                                    <p class="title">Length :</p><span class="desc desc-sm">2 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chapter_card">
+                            <h5 class="title title-xs">Chapter-2 The Roman Culture</h5>
+                            <p class="desc">It will help to improve your life career with the perfect and needed
+                                knowledge about your life.</p>
+                            <div class="chapter_cardBottom">
+                                <div>
+                                    <p class="title">Pages :</p><span class="desc desc-sm">108 pages</span>
+                                </div>
+                                <div>
+                                    <p class="title">Length :</p><span class="desc desc-sm">3 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chapter_card">
+                            <h5 class="title title-xs">Chapter-3 How They Servived</h5>
+                            <p class="desc">We wanted to create an easy, convenient way for you to get your books &amp;
+                                support.</p>
+                            <div class="chapter_cardBottom">
+                                <div>
+                                    <p class="title">Pages :</p><span class="desc desc-sm">250 pages</span>
+                                </div>
+                                <div>
+                                    <p class="title">Length :</p><span class="desc desc-sm">4 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chapter_card">
+                            <h5 class="title title-xs">Chapter-4 The End Of Romans</h5>
+                            <p class="desc">Promote your book via Pages shop to support your writing &amp; reading
+                                career.</p>
+                            <div class="chapter_cardBottom">
+                                <div>
+                                    <p class="title">Pages :</p><span class="desc desc-sm">175 pages</span>
+                                </div>
+                                <div>
+                                    <p class="title">Length :</p><span class="desc desc-sm">3 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="chapter_btnBox"><a href="#" class="button">Start a 15-Days Free Trail</a>
+                        <ul>
+                            <li><a href="#" class="desc desc-sm">Short description about each chapter</a></li>
+                            <li><a href="#" class="desc desc-sm desc-blue">Have any questions?</a></li>
+                            <li><a href="#" class="desc desc-sm">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="review">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xxl-4">
+                    <div class="review_textBox">
+                        <div class="review_title">
+                            <h2 class="title">Words From Our Readers</h2>
+                        </div>
+                        <p class="desc">We believe that bookstores are essential to a healthy culture. They’re where
+                            authors can connect with readers, where we discover new writers, where children get hooked
+                            on the thrill of reading that can last a lifetime.</p>
+                        <div class="review_bottom">
+                            <div class="review_total">
+                                <div><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i
+                                        class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i
+                                        class="fa-solid fa-circle-half-stroke"></i></div><span class="title">(4.8 /
+                                    5)</span>
+                            </div>
+                            <p class="desc desc-blue">Overall Customer Ratings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xxl-8">
+                    <div class="review_cardBox">
+                        <div class="review_card">
+                            <div class="review_cardTitle">
+                                <div class="review_cardImg"><img src="review_img1.jfif.jpg" alt="person"></div>
+                                <div class="review_cardName">
+                                    <h5 class="title title-xs title-white">James Williams</h5>
+                                    <div class="review_starBox"><i class="fa-solid fa-circle"></i><i
+                                            class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i
+                                            class="fa-solid fa-circle"></i><i
+                                            class="fa-solid fa-circle-half-stroke"></i></div>
+                                </div>
+                            </div>
+                            <h6 class="title title-white">“ Great Books Collections ”</h6>
+                            <p class="desc desc-light">I was searching this book for many years and I was happy that I
+                                could find it here.</p>
+                        </div>
+                        <div class="review_card">
+                            <div class="review_cardTitle">
+                                <div class="review_cardImg"><img src="review_img2.jfif.jpg" alt="person"></div>
+                                <div class="review_cardName">
+                                    <h5 class="title title-xs title-white">Chris Adams</h5>
+                                    <div class="review_starBox"><i class="fa-solid fa-circle"></i><i
+                                            class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i
+                                            class="fa-solid fa-circle"></i><i class="fa-regular fa-circle"></i></div>
+                                </div>
+                            </div>
+                            <h6 class="title title-white">“ Perfect Response Author ”</h6>
+                            <p class="desc desc-light">I had a question about the book and the author response was great
+                                &amp; comfort.</p>
+                        </div>
+                        <div class="review_card">
+                            <div class="review_cardTitle">
+                                <div class="review_cardImg"><img src="review_img3.jfif.jpg" alt="person"></div>
+                                <div class="review_cardName">
+                                    <h5 class="title title-xs title-white">Angeline Flora</h5>
+                                    <div class="review_starBox"><i class="fa-solid fa-circle"></i><i
+                                            class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i
+                                            class="fa-solid fa-circle"></i><i
+                                            class="fa-solid fa-circle-half-stroke"></i></div>
+                                </div>
+                            </div>
+                            <h6 class="title title-white">“ Creative Writing Skill ”</h6>
+                            <p class="desc desc-light">Sent an email after to books arrived to ask about the author
+                                &amp; I received a reply.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="article">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="article_title">
+                        <h2 class="title">Articles &amp; Resources</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper article_swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                        <div class="swiper-wrapper" id="swiper-wrapper-410104b910abbead8a2" aria-live="off"
+                            style="transition-duration: 0ms; transform: translate3d(-1340px, 0px, 0px); transition-delay: 0ms;">
+                            <div class="swiper-slide article_slide" role="group" aria-label="6 / 6"
+                                style="width: 426.667px; margin-right: 20px;" data-swiper-slide-index="5">
+                                <div class="article_slideImg"><img src="article_img6.jpg" alt="image"></div>
+                                <div class="article_slideText">
+                                    <h5 class="title title-xs">Lorem, ipsum dolor sit amet consectetur adipisicing.</h5>
+                                    <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
+                                        aspernatur porro. Nisi!</p>
+                                    <div><a href="#" class="title">Read More</a><span class="title">October 6,
+                                            2021</span></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide article_slide" role="group" aria-label="1 / 6"
+                                style="width: 426.667px; margin-right: 20px;" data-swiper-slide-index="0">
+                                <div class="article_slideImg"><img src="article_img1.jpg" alt="image"></div>
+                                <div class="article_slideText">
+                                    <h5 class="title title-xs">Significant reading has more info number</h5>
+                                    <p class="desc">Override the digital divide with additional clickthroughs from
+                                        DevOps for real-time schemas.</p>
+                                    <div><a href="#" class="title">Read More</a><span class="title">October 6,
+                                            2021</span></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide article_slide swiper-slide-prev" role="group" aria-label="2 / 6"
+                                style="width: 426.667px; margin-right: 20px;" data-swiper-slide-index="1">
+                                <div class="article_slideImg"><img src="article_img2.jpg" alt="image"></div>
+                                <div class="article_slideText">
+                                    <h5 class="title title-xs">Many variations of pass majority have suffered</h5>
+                                    <p class="desc">Capitalize on low-hanging fruit to identify a ballpark value-added
+                                        activity to beta test pest.</p>
+                                    <div><a href="#" class="title">Read More</a><span class="title">October 6,
+                                            2021</span></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide article_slide swiper-slide-active" role="group" aria-label="3 / 6"
+                                style="width: 426.667px; margin-right: 20px;" data-swiper-slide-index="2">
+                                <div class="article_slideImg"><img src="article_img3.jpg" alt="image"></div>
+                                <div class="article_slideText">
+                                    <h5 class="title title-xs">Words which don’t look even slightly believable</h5>
+                                    <p class="desc">Podcasting operational change management inside of workflows to
+                                        establish a framework.</p>
+                                    <div><a href="#" class="title">Read More</a><span class="title">October 6,
+                                            2021</span></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide article_slide swiper-slide-next" role="group" aria-label="4 / 6"
+                                style="width: 426.667px; margin-right: 20px;" data-swiper-slide-index="3">
+                                <div class="article_slideImg"><img src="article_img4.jpg" alt="image"></div>
+                                <div class="article_slideText">
+                                    <h5 class="title title-xs">Lorem, ipsum dolor sit amet consectetur adipisicing.</h5>
+                                    <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
+                                        aspernatur porro. Nisi!</p>
+                                    <div><a href="#" class="title">Read More</a><span class="title">October 6,
+                                            2021</span></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide article_slide" role="group" aria-label="5 / 6"
+                                style="width: 426.667px; margin-right: 20px;" data-swiper-slide-index="4">
+                                <div class="article_slideImg"><img src="article_img5.jpg" alt="image"></div>
+                                <div class="article_slideText">
+                                    <h5 class="title title-xs">Lorem, ipsum dolor sit amet consectetur adipisicing.</h5>
+                                    <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
+                                        aspernatur porro. Nisi!</p>
+                                    <div><a href="#" class="title">Read More</a><span class="title">October 6,
+                                            2021</span></div>
+                                </div>
+                            </div>
+                        </div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="email">
+        <div class="container email_container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="email_contentBox">
+                        <div class="email_textBox">
+                            <h2 class="title">Get The Best Updates</h2>
+                            <p class="desc desc-blue">Subscribe with your mail id to know the current update in book
+                                edition at your fingertip with in a minute.</p>
+                        </div>
+                        <div class="email_formBox">
+                            <form action=""><input type="email" placeholder="Your Email ID..." value=""><button
+                                    type="submit" class="button button-blue">Subscribe</button></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="order-1 order-sm-1 order-lg-1 col-12 col-sm-6 col-lg-3">
+                    <div class="footer_logo"><a href="#"><img src="logo.svg" alt="logo"></a>
+                        <div class="footer_iconBox"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a
+                                href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></div>
+                        <h6 class="desc desc-sm desc-light">© Monday Labs Academy</h6>
+                        <h6 class="desc desc-sm desc-light">09.10.2024</h6>
+                    </div>
+                </div>
+                <div class="order-2 order-sm-3 order-lg-2 col-12 col-sm-6 col-lg-3">
+                    <div class="footer_menu">
+                        <h5 class="title title-xs title-white">Explore</h5>
+                        <ul>
+                            <li><a href="#" class="desc desc-sm desc-light">Home</a></li>
+                            <li><a href="#" class="desc desc-sm desc-light">About</a></li>
+                            <li><a href="#" class="desc desc-sm desc-light">Articles</a></li>
+                            <li><a href="#" class="desc desc-sm desc-light">Our Store</a></li>
+                            <li><a href="#" class="desc desc-sm desc-light">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="order-3 order-sm-4 order-lg-3 col-12 col-sm-6 col-lg-3">
+                    <div class="footer_menu">
+                        <h5 class="title title-xs title-white">Utility Pages</h5>
+                        <ul>
+                            <li><a href="#" class="desc desc-sm desc-light">Style Guide</a></li>
+                            <li><a href="#" class="desc desc-sm desc-light">404 Not Found</a></li>
+                            <li><a href="#" class="desc desc-sm desc-light">Password Protected</a></li>
+                            <li><a href="#" class="desc desc-sm desc-light">Licenses</a></li>
+                            <li><a href="#" class="desc desc-sm desc-light">Changelog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="order-4 order-sm-2 order-lg-4 col-12 col-sm-6 col-lg-3">
+                    <div class="footer_addressBox">
+                        <h5 class="title title-xs title-white">Keep in Touch</h5>
+                        <div class="footer_address">
+                            <div>
+                                <h6 class="title title-white">Address:</h6><a
+                                    href="https://maps.app.goo.gl/Xv9HQu4p4752rfHw5" class="desc desc-sm desc-light">24A
+                                    Kingston St, Los Vegas NC 28202, USA.</a>
+                            </div>
+                            <div>
+                                <h6 class="title title-white">Mail:</h6><a href="mailto:support@pages.com"
+                                    class="desc desc-sm desc-light">support@pages.com</a>
+                            </div>
+                            <div>
+                                <h6 class="title title-white">Phone:</h6><a href="tel:(+22) 123 - 4567 - 900"
+                                    class="desc desc-sm desc-light">(+22) 123 - 4567 - 900</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="creditors">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper creditors_swiper swiper-initialized swiper-horizontal">
+                        <div class="swiper-wrapper" id="swiper-wrapper-6b091c911484fd51" aria-live="off"
+                            style="transition-duration: 300ms; transform: translate3d(-1330px, 0px, 0px);">
+                            <div class="swiper-slide creditors_slide title" role="group" aria-label="2 / 12"
+                                style="width: 211.667px; margin-right: 10px;" data-swiper-slide-index="1">Azizjon
+                                Yakubov</div>
+                            <div class="swiper-slide creditors_slide title" role="group" aria-label="3 / 12"
+                                style="width: 211.667px; margin-right: 10px;" data-swiper-slide-index="2">Amirbek
+                                Baxshilloyev</div>
+                            <div class="swiper-slide creditors_slide title" role="group" aria-label="4 / 12"
+                                style="width: 211.667px; margin-right: 10px;" data-swiper-slide-index="3">Amirxon
+                                Raxmatov</div>
+                            <div class="swiper-slide creditors_slide title" role="group" aria-label="5 / 12"
+                                style="width: 211.667px; margin-right: 10px;" data-swiper-slide-index="4">Diyorbek
+                                Qandiyorov</div>
+                            <div class="swiper-slide creditors_slide title" role="group" aria-label="6 / 12"
+                                style="width: 211.667px; margin-right: 10px;" data-swiper-slide-index="5">Islom Odilov
+                            </div>
+                            <div class="swiper-slide creditors_slide title swiper-slide-prev" role="group"
+                                aria-label="7 / 12" style="width: 211.667px; margin-right: 10px;"
+                                data-swiper-slide-index="6">Alisher Hasanov</div>
+                            <div class="swiper-slide creditors_slide title swiper-slide-active" role="group"
+                                aria-label="8 / 12" style="width: 211.667px; margin-right: 10px;"
+                                data-swiper-slide-index="7">Daniyar Fayziyev</div>
+                            <div class="swiper-slide creditors_slide title swiper-slide-next" role="group"
+                                aria-label="9 / 12" data-swiper-slide-index="8"
+                                style="width: 211.667px; margin-right: 10px;">Muhammadmirzo Vohidov</div>
+                            <div class="swiper-slide creditors_slide title" role="group" aria-label="10 / 12"
+                                data-swiper-slide-index="9" style="width: 211.667px; margin-right: 10px;">Mirzobek
+                                Ahmedov</div>
+                            <div class="swiper-slide creditors_slide title" role="group" aria-label="11 / 12"
+                                data-swiper-slide-index="10" style="width: 211.667px; margin-right: 10px;">Hasan
+                                Jo`rayev</div>
+                            <div class="swiper-slide creditors_slide title" role="group" aria-label="12 / 12"
+                                style="width: 211.667px; margin-right: 10px;" data-swiper-slide-index="11">Qobilbek
+                                Fozilov</div>
+                            <div class="swiper-slide creditors_slide title" role="group" aria-label="1 / 12"
+                                style="width: 211.667px; margin-right: 10px;" data-swiper-slide-index="0">Haydarali
+                                Asrorov</div>
+                        </div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><a href="#" id="anchor" class=""><i class="fa-solid fa-angle-up"></i></a>
+    <section id="media-gallery" style="max-width:960px;margin:40px auto;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+        <img src="public/images/1984.jpg" alt="media" style="width:300px;height:auto;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.1)">
+        <div style="display:flex;flex-direction:column;gap:10px">
+            <div>Player: <span data-status>paused</span></div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <button class="button" data-change>Random Image + Sound</button>
+                <button class="button button-blue" data-play>Play/Pause</button>
+            </div>
+            <label>Volume <input type="range" min="0" max="100" value="50"></label>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
