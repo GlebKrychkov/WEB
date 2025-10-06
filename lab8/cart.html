@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Pages</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_row row">
+                <div class="header_logo col-lg-3">
+                    <a href="index.html"><img src="logo.svg" alt="Pages Logo"></a>
+                </div>
+                <div class="header_menu col-lg-6">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="register.html">Register/Login</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li class="admin-link" style="display: none;"><a href="admin.html">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="header_iconBox col-lg-3">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="register.html"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart">
+        <div class="container">
+            <h2 class="title text-center">Shopping Cart</h2>
+            <div id="cart-list" class="row"></div>
+            <div class="text-center mt-4">
+                <button id="checkout-btn" class="button" disabled>Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer_logo col-lg-3">
+                    <a href="index.html"><img src="logo.svg" alt="Pages Logo"></a>
+                    <div class="footer_iconBox">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer_menu col-lg-3">
+                    <h5 class="title title-xs title-white">Links</h5>
+                    <ul>
+                        <li><a href="index.html" class="desc desc-sm desc-light">Home</a></li>
+                        <li><a href="catalog.html" class="desc desc-sm desc-light">Catalog</a></li>
+                        <li><a href="cart.html" class="desc desc-sm desc-light">Cart</a></li>
+                        <li><a href="register.html" class="desc desc-sm desc-light">Register/Login</a></li>
+                        <li><a href="feedback.html" class="desc desc-sm desc-light">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer_address col-lg-3">
+                    <h5 class="title title-xs title-white">Contact</h5>
+                    <div>
+                        <h6 class="desc desc-sm desc-light">Email:</h6>
+                        <a href="mailto:support@pages.com" class="desc desc-sm desc-light">support@pages.com</a>
+                    </div>
+                    <div>
+                        <h6 class="desc desc-sm desc-light">Phone:</h6>
+                        <a href="tel:+1234567890" class="desc desc-sm desc-light">+1 234 567 890</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
