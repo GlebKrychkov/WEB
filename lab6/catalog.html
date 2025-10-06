@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog of Books</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header (такой же как в index.html) -->
+    <header class="header">
+        <div class="container">
+            <div class="row header_row">
+                <div class="header_logo col-lg-2 col-md-2 col-sm-2 col-2">
+                    <a href="index.html"><img src="logo.svg" alt="logo"></a>
+                </div>
+                <div class="header_menu col-lg-6 col-md-6 col-sm-2 col-2">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="header_btnBox col-lg-4 col-md-4 col-sm-8 col-8">
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="#" class="button">Order Today</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="catalog-controls">
+        <input type="text" id="searchInput" placeholder="Поиск по названию...">
+        <select id="sortSelect">
+            <option value="title">Сортировка по названию</option>
+            <option value="price">Сортировка по цене</option>
+            <option value="rating">Сортировка по рейтингу</option>
+        </select>
+        <div class="filters">
+            <label><input type="checkbox" name="category" value="Фантастика"> Фантастика</label>
+            <label><input type="checkbox" name="category" value="Детектив"> Детектив</label>
+            <!-- Добавьте другие категории по вашим данным -->
+        </div>
+        <button id="showAll">Показать все</button>
+    </div>
+    <div class="books-container" id="booksContainer"></div>
+    <section class="catalog" style="padding: 120px 0;">
+        <div class="container">
+            <h2 class="title title-lg text-center">Book Catalog</h2>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <input type="text" id="search" class="form-control" placeholder="Search by title or description">
+                </div>
+                <div class="col-md-4">
+                    <select id="sort" class="form-control">
+                        <option value="default">Sort by...</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="title-asc">Title: A to Z</option>
+                        <option value="rating-desc">Rating: High to Low</option>
+                    </select>
+                </div>
+                <div class="col-md-4 category-filter">
+                    <label><input type="checkbox" class="category-checkbox" value="Fiction"> Fiction</label>
+                    <label><input type="checkbox" class="category-checkbox" value="Non-Fiction"> Non-Fiction</label>
+                    <label><input type="checkbox" class="category-checkbox" value="Science"> Science</label>
+                    <label><input type="checkbox" class="category-checkbox" value="History"> History</label>
+                    <label><input type="checkbox" class="category-checkbox" value="Fantasy"> Fantasy</label>
+                    <label><input type="checkbox" class="category-checkbox" value="Mystery"> Mystery</label>
+                </div>
+            </div>
+            <div class="array-methods mb-4 text-center">
+                <!-- Buttons from Stage 2 -->
+            </div>
+            <div id="catalog" class="row"></div>
+        </div>
+    </section>
+    <!-- Footer (такой же как в index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer_logo col-lg-3 col-md-6 col-sm-12">
+                    <a href="index.html"><img src="logo.svg" alt="logo"></a>
+                    <h6 class="desc desc-light">© Monday Labs Academy</h6>
+                    <h6 class="desc desc-light">09.10.2024</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="catalog.js"></script>
+</body>
+</html>
