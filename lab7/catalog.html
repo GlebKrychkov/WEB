@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_row row">
+                <div class="header_logo col-lg-3 col-md-6 col-sm-12">
+                    <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
+                </div>
+                <div class="header_menu col-lg-6 col-md-6 col-sm-12">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalog.html">Catalog</a></li>
+                    </ul>
+                </div>
+                <div class="header_iconBox col-lg-3 col-md-6 col-sm-6">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="catalog">
+        <div class="container">
+            <h2 class="title text-center mb-4">Book Catalog</h2>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search by title...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <select id="sortSelect" class="form-control">
+                        <option value="title-asc">Title (A-Z)</option>
+                        <option value="title-desc">Title (Z-A)</option>
+                        <option value="price-asc">Price (Low to High)</option>
+                        <option value="price-desc">Price (High to Low)</option>
+                    </select>
+                    <div class="category-filter">
+                        <label><input type="radio" name="category" data-category="all" checked> All</label>
+                        <label><input type="radio" name="category" data-category="Fiction"> Fiction</label>
+                        <label><input type="radio" name="category" data-category="Non-Fiction"> Non-Fiction</label>
+                        <label><input type="radio" name="category" data-category="Science"> Science</label>
+                        <label><input type="radio" name="category" data-category="Fantasy"> Fantasy</label>
+                        <label><input type="radio" name="category" data-category="Mystery"> Mystery</label>
+                        <label><input type="radio" name="category" data-category="History"> History</label>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12 col-sm-12">
+                    <div id="loader" class="loader" style="display: none;"></div>
+                    <div id="book-list" class="row"></div>
+                    <div class="pagination text-center">
+                        <button id="prevPage" class="button">Previous</button>
+                        <span id="currentPage">1</span>
+                        <button id="nextPage" class="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer_logo col-lg-4 col-md-12 col-sm-12">
+                    <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                    <div class="footer_iconBox">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer_menu col-lg-4 col-md-12 col-sm-12">
+                    <h6 class="desc desc-light">Links</h6>
+                    <ul>
+                        <li><a href="index.html" class="desc desc-light">Home</a></li>
+                        <li><a href="catalog.html" class="desc desc-light">Catalog</a></li>
+                    </ul>
+                </div>
+                <div class="footer_address col-lg-4 col-md-12 col-sm-12">
+                    <h6 class="desc desc-light">Contact</h6>
+                    <div>
+                        <h6 class="desc desc-light">Email: <a href="mailto:support@bookstore.com" class="desc desc-light">support@bookstore.com</a></h6>
+                    </div>
+                    <div>
+                        <h6 class="desc desc-light">Phone: <a href="tel:+1234567890" class="desc desc-light">+1 234 567 890</a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="catalog.js"></script>
+</body>
+</html>
